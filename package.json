@@ -84,7 +84,7 @@
   "bundlesize": [
     {
       "path": "./dist/ngx-scroll-lock/bundles/ngx-scroll-lock.umd.min.js",
-      "maxSize": "672B"
+      "maxSize": "645B"
     }
   ]
 }

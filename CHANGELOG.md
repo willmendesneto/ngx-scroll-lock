@@ -13,3 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Added tests for module
 - Configuring coveralls
 - Added Circle-CI integration
+
+### Updated
+
+- Decreased module bundle size
