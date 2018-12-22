@@ -1,4 +1,4 @@
-# NGX Skeleton loader
+# NGX Scroll locker
 
 > Angular module for Page Scroll locking
 
@@ -13,7 +13,7 @@
 [![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/ngx-scroll-lock.svg)](https://bundlephobia.com/result?p=ngx-scroll-lock)
 [![npm](https://img.shields.io/npm/l/express.svg?maxAge=2592000)](/LICENSE)
 
-![ngx-scroll-lock in action](https://user-images.githubusercontent.com/1252570/50053778-d4e0d900-018e-11e9-9de7-fad6f9fddd9e.gif)
+![ngx-scroll-lock in action](https://user-images.githubusercontent.com/1252570/50374778-db1bfd00-0647-11e9-910d-f66df77f9132.gif)
 
 ## Why scroll lock?
 

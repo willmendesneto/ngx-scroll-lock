@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+### Updated
+
+- Updated `README.md` docs
+
 ## [1.0.0][] - 2018-12-23
 
 ### Added
@@ -20,6 +24,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - Decreased module bundle size
 
-
-[Unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v1.0.0...HEAD
+[unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v1.0.0
