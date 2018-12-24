@@ -1,7 +1,7 @@
 {
   "name": "ngx-scroll-lock-demo",
   "description": "Angular module for Page Scroll locking",
-  "version": "1.0.3",
+  "version": "8.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -83,7 +83,7 @@
   "bundlesize": [
     {
       "path": "./dist/ngx-scroll-lock/bundles/ngx-scroll-lock.umd.min.js",
-      "maxSize": "1010B"
+      "maxSize": "1020B"
     }
   ]
 }

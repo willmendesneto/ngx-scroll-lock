@@ -79,21 +79,25 @@ export class NgxScrollLockComponent implements OnInit, OnDestroy, OnChanges {
     this._targetElement.classList.add('ngx-scroll-lock');
 
     // Mobile Safari ignores { overflow: hidden } declaration on the body.
-    this._targetElement.addEventListener(
-      'touchmove',
-      this.preventTouchMove,
-      this._listenerOptions
-    );
+    if (this.isTouchDevice()) {
+      this._targetElement.addEventListener(
+        'touchmove',
+        this.preventTouchMove,
+        this._listenerOptions
+      );
+    }
   }
 
   enableLock(target: HTMLElement) {
     this._targetElement.classList.remove('ngx-scroll-lock');
 
-    this._targetElement.removeEventListener(
-      'touchmove',
-      this.preventTouchMove,
-      this._listenerOptions
-    );
+    if (this.isTouchDevice()) {
+      this._targetElement.removeEventListener(
+        'touchmove',
+        this.preventTouchMove,
+        this._listenerOptions
+      );
+    }
   }
 
   isTouchDevice() {

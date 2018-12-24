@@ -1,7 +1,7 @@
 {
   "name": "ngx-scroll-lock",
   "description": "Angular module for Page Scroll locking",
-  "version": "1.0.3",
+  "version": "8.0.0",
   "peerDependencies": {
     "@angular/common": "^7.1.0",
     "@angular/core": "^7.1.0"

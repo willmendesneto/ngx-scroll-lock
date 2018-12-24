@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+### Updated
+
+- Update docs
+- Adding touchmove listeners only if it's a mobile device
+
 ## [1.0.3][] - 2018-12-24
 
 ### Updated
@@ -50,7 +55,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [1.0.1]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v1.0.1
 [unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v1.0.2...HEAD
 [1.0.2]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v1.0.2
-
-
-[Unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v1.0.3...HEAD
+[unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v1.0.3...HEAD
 [1.0.3]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v1.0.3
