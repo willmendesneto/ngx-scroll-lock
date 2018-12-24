@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+## [1.0.2][] - 2018-12-24
+
 ### Updated
 
 - Updating example styles
@@ -39,3 +41,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [1.0.0]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v1.0.0
 [unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v1.0.1...HEAD
 [1.0.1]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v1.0.1
+
+
+[Unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v1.0.2
