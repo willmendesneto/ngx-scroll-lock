@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Updating example styles
 - Removing dependency
 
+### Fixed
+
+- Fixing unit tests
+
 ## [1.0.1][] - 2018-12-23
 
 ### Updated
