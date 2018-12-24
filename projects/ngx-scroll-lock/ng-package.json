@@ -2,10 +2,6 @@
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/ngx-scroll-lock",
   "lib": {
-    "entryFile": "src/public_api.ts",
-    "umdModuleIds": {
-      "body-scroll-lock": "bodyScrollLock"
-    }
-  },
-  "whitelistedNonPeerDependencies": ["."]
+    "entryFile": "src/public_api.ts"
+  }
 }
