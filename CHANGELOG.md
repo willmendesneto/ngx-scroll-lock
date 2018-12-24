@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+### Updated
+
+- Updating example styles
+- Removing dependency
+
 ## [1.0.1][] - 2018-12-23
 
 ### Updated
@@ -28,7 +33,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 [unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v1.0.0
-
-
-[Unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v1.0.1...HEAD
+[unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v1.0.1...HEAD
 [1.0.1]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v1.0.1

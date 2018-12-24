@@ -46,7 +46,6 @@
     "@angular/platform-browser": "~7.1.0",
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
-    "body-scroll-lock": "^2.6.1",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
@@ -84,7 +83,7 @@
   "bundlesize": [
     {
       "path": "./dist/ngx-scroll-lock/bundles/ngx-scroll-lock.umd.min.js",
-      "maxSize": "645B"
+      "maxSize": "1010B"
     }
   ]
 }

@@ -1,8 +1,27 @@
-<h1>NGX Scroll locker</h1>
-<ngx-scroll-lock [lock]="lock"></ngx-scroll-lock>
+<a href="https://github.com/willmendesneto/ngx-scroll-lock">
+  <h1>ngx-scroll-lock</h1>
+</a>
 
-<button type="button" (click)="lock = !lock">
+<ngx-scroll-lock [lock]="lock" [target]="target"></ngx-scroll-lock>
+
+<button type="button" class="btn" (click)="lock = !lock">
   Click to {{ lock ? 'Unlock' : 'Lock' }}
+</button>
+
+<h2>
+  Current target for lock: <b>{{ target }}</b>
+</h2>
+<p>
+  You can click in this button to toggle the lock between the elements:
+  <b>document.body</b> and <b>.content-with-scroll</b>
+</p>
+<button
+  type="button"
+  class="btn"
+  (click)="target = target === 'body' ? '.content-with-scroll' : 'body'"
+>
+  Click to change scroll lock target to
+  <b>{{ target === 'body' ? '.content-with-scroll' : 'document.body' }}</b>
 </button>
 
 <h2>Element with scroll</h2>
