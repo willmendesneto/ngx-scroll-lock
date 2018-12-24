@@ -1,7 +1,7 @@
 {
   "name": "ngx-scroll-lock-demo",
   "description": "Angular module for Page Scroll locking",
-  "version": "8.0.0",
+  "version": "9.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
