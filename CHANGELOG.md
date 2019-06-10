@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+## [9.0.1][] - 2019-06-10
+
 ### Updated
 
 - Updating Angular CLI to v8
@@ -65,5 +67,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [1.0.3]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v1.0.3
 
 
-[Unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v9.0.0...HEAD
+[Unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v9.0.1...HEAD
+[9.0.1]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v9.0.0...v9.0.1
 [9.0.0]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v9.0.0
