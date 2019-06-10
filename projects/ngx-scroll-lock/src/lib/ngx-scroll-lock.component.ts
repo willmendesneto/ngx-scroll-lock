@@ -29,25 +29,25 @@ export class NgxScrollLockComponent implements OnInit, OnDestroy, OnChanges {
   @Input()
   lock = false;
 
-  private _targetElement: HTMLElement;
+  private targetElement: HTMLElement;
 
-  private _listenerOptions = {
+  private listenerOptions = {
     capture: false,
     passive: false,
   };
 
   ngOnInit() {
-    this._targetElement = this.target
+    this.targetElement = this.target
       ? document.querySelector(this.target)
       : document.body;
 
     if (this.lock) {
-      this.disableLock(this._targetElement);
+      this.disableLock(this.targetElement);
     }
   }
 
   ngOnDestroy() {
-    this.enableLock(this._targetElement);
+    this.enableLock(this.targetElement);
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -56,12 +56,12 @@ export class NgxScrollLockComponent implements OnInit, OnDestroy, OnChanges {
       !changes.target.firstChange &&
       changes.target.previousValue !== changes.target.currentValue
     ) {
-      this.enableLock(this._targetElement);
-      this._targetElement = this.target
+      this.enableLock(this.targetElement);
+      this.targetElement = this.target
         ? document.querySelector(this.target)
         : document.body;
       if (this.lock) {
-        this.disableLock(this._targetElement);
+        this.disableLock(this.targetElement);
       }
     }
     if (
@@ -70,48 +70,51 @@ export class NgxScrollLockComponent implements OnInit, OnDestroy, OnChanges {
       changes.lock.previousValue !== changes.lock.currentValue
     ) {
       changes.lock.currentValue
-        ? this.disableLock(this._targetElement)
-        : this.enableLock(this._targetElement);
+        ? this.disableLock(this.targetElement)
+        : this.enableLock(this.targetElement);
     }
   }
 
   disableLock(target: HTMLElement) {
-    this._targetElement.classList.add('ngx-scroll-lock');
+    this.targetElement.classList.add('ngx-scroll-lock');
 
     // Mobile Safari ignores { overflow: hidden } declaration on the body.
     if (this.isTouchDevice()) {
-      this._targetElement.addEventListener(
+      this.targetElement.addEventListener(
         'touchmove',
         this.preventTouchMove,
-        this._listenerOptions
+        this.listenerOptions
       );
     }
   }
 
   enableLock(target: HTMLElement) {
-    this._targetElement.classList.remove('ngx-scroll-lock');
+    this.targetElement.classList.remove('ngx-scroll-lock');
 
     if (this.isTouchDevice()) {
-      this._targetElement.removeEventListener(
+      this.targetElement.removeEventListener(
         'touchmove',
         this.preventTouchMove,
-        this._listenerOptions
+        this.listenerOptions
       );
     }
   }
 
   isTouchDevice() {
-    if (typeof window === 'undefined' || !window) return false;
-    return 'ontouchstart' in window || navigator.maxTouchPoints;
+    return !!window && ('ontouchstart' in window || navigator.maxTouchPoints);
   }
 
   preventTouchMove(rawEvent: TouchEvent): boolean {
-    const e = rawEvent || { ...window.event, touches: [] };
+    const e = rawEvent || { ...(window as any).event, touches: [] };
 
     // // Do not prevent if the event has more than one touch (usually meaning this is a multi touch gesture like pinch to zoom)
-    if (e.touches && e.touches.length > 1) return true;
+    if (e.touches && e.touches.length > 1) {
+      return true;
+    }
 
-    if (e.preventDefault) e.preventDefault();
+    if (e.preventDefault) {
+      e.preventDefault();
+    }
 
     return false;
   }
