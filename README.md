@@ -48,11 +48,15 @@ npm install ngx-scroll-lock --save
 You'll need to add `NgxScrollLockModule` to your application module. So that, the `<ngx-scroll-lock>` components will be accessible in your application.
 
 ```typescript
+...
+import { NgxScrollLockModule } from 'ngx-scroll-lock';
+...
 @NgModule({
   declarations: [
     YourAppComponent
   ],
   imports: [
+    ...
     NgxScrollLockModule,
     ...
   ],
