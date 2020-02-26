@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+## [9.0.2][] - 2020-02-26
+
 ### Updated
 
 - Updating to NodeJS v12.14.1
@@ -76,3 +78,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v9.0.1...HEAD
 [9.0.1]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v9.0.0...v9.0.1
 [9.0.0]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v9.0.0
+
+
+[Unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v9.0.2...HEAD
+[9.0.2]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v9.0.2
