@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/willmendesneto/ngx-scroll-lock#readme",
   "peerDependencies": {
-    "@angular/common": "^8.0.0",
-    "@angular/core": "^8.0.0"
+    "@angular/common": ">=8.0.0",
+    "@angular/core": ">=8.0.0"
   }
 }

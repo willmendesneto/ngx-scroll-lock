@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+### Updated
+
+- Updating to NodeJS v12.14.1
+
+### Fixed
+
+- Solving peerDependency warning when installing library in an Angular 9 project
+
 ## [9.0.1][] - 2019-06-10
 
 ### Updated
@@ -65,8 +73,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [1.0.2]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v1.0.2
 [unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v1.0.3...HEAD
 [1.0.3]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v1.0.3
-
-
-[Unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v9.0.1...HEAD
+[unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v9.0.1...HEAD
 [9.0.1]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v9.0.0...v9.0.1
 [9.0.0]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v9.0.0
