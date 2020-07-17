@@ -68,13 +68,31 @@ export class YourAppComponent {}
 
 ```
 
-After that, you can use the `featureToggle` components in your templates, passing the configuration data into the component itself.
+After that, you can use the `ngx-scroll-lock` component in your templates, passing the `target` element into the component itself and/or .
 
-- `ngx-scroll-lock`: Handle the scroll lock of your app;
+- `target`: DOM element to be locked. Default: `document.body`;
+- `lock`: Boolean to be changed in case a scroll lock is needed from outside `ngx-scroll-lock` component;
+
+```js
+import { Component } from "@angular/core";
+
+@Component({
+  selector: "my-app",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
+})
+export class AppComponent {
+  lock = false;
+  target = "#my-element-with-scroll";
+}
+```
 
 ```html
-<ngx-scroll-lock lock="true"> </ngx-scroll-lock>
+<ngx-scroll-lock [lock]="lock" [target]="target"></ngx-scroll-lock>
+<div id="my-element-with-scroll"></div>
 ```
+
+> Please make sure you have the `target` element available when using it.
 
 ## Development
 

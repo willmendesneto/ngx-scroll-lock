@@ -8,6 +8,7 @@
     "ng",
     "ngx",
     "scroll lock",
+    "scroll",
     "lock",
     "locker",
     "ngx-scroll-lock"
@@ -80,7 +81,7 @@
   "bundlesize": [
     {
       "path": "./dist/ngx-scroll-lock/bundles/ngx-scroll-lock.umd.min.js",
-      "maxSize": "1KB"
+      "maxSize": "1.13KB"
     }
   ]
 }

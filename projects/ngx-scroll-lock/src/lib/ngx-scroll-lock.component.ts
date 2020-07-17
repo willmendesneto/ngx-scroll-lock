@@ -6,6 +6,7 @@ import {
   OnChanges,
   SimpleChanges,
   ViewEncapsulation,
+  isDevMode,
 } from '@angular/core';
 
 @Component({
@@ -41,13 +42,25 @@ export class NgxScrollLockComponent implements OnInit, OnDestroy, OnChanges {
       ? document.querySelector(this.target)
       : document.body;
 
-    if (this.lock) {
+    // Shows error message only in Development
+    if (!this.targetElement && isDevMode()) {
+      console.error(
+        // tslint:disable-next-line: max-line-length
+        `\`NgxScrollLockComponent\` need to receive "target" as an element, but it received "${
+          this.target || 'body'
+        }". Please check if the element is unique and it's available in your DOM.`
+      );
+    }
+
+    if (this.lock && this.targetElement) {
       this.disableLock(this.targetElement);
     }
   }
 
   ngOnDestroy() {
-    this.enableLock(this.targetElement);
+    if (this.targetElement) {
+      this.enableLock(this.targetElement);
+    }
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -60,14 +73,15 @@ export class NgxScrollLockComponent implements OnInit, OnDestroy, OnChanges {
       this.targetElement = this.target
         ? document.querySelector(this.target)
         : document.body;
-      if (this.lock) {
+      if (this.lock && this.targetElement) {
         this.disableLock(this.targetElement);
       }
     }
     if (
       changes.lock &&
       !changes.lock.firstChange &&
-      changes.lock.previousValue !== changes.lock.currentValue
+      changes.lock.previousValue !== changes.lock.currentValue &&
+      this.targetElement
     ) {
       changes.lock.currentValue
         ? this.disableLock(this.targetElement)
