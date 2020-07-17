@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+## [9.1.0][] - 2020-07-17
+
 ### Added
 
 - Adding error message if target element is not available in the DOM.
@@ -84,3 +86,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [9.0.0]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v9.0.0
 [unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v9.0.2...HEAD
 [9.0.2]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v9.0.2
+
+
+[Unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v9.1.0...HEAD
+[9.1.0]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v9.1.0
