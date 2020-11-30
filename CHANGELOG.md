@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 
+- Fixing scroll lock in mobile. Closes https://github.com/willmendesneto/ngx-scroll-lock/issues/22
 - Fixing bundle size command on CircleCI pipeline
 
 ## [9.1.0][] - 2020-07-17

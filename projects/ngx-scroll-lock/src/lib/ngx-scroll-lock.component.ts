@@ -120,9 +120,9 @@ export class NgxScrollLockComponent implements OnInit, OnDestroy, OnChanges {
 
   preventTouchMove(rawEvent: TouchEvent): boolean {
     const e = rawEvent || { ...(window as any).event, touches: [] };
-
-    // // Do not prevent if the event has more than one touch (usually meaning this is a multi touch gesture like pinch to zoom)
-    if (e.touches && e.touches.length > 1) {
+    // // Do not prevent if the event has more than one touch
+    // (usually meaning this is a single or multi touch gesture like pinch to zoom)
+    if (e.touches && e.touches.length >= 1) {
       return true;
     }
 
