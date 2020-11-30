@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+## [9.1.1][] - 2020-11-30
+
 ### Fixed
 
 - Fixing scroll lock in mobile. Closes https://github.com/willmendesneto/ngx-scroll-lock/issues/22
@@ -93,3 +95,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [9.0.2]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v9.0.2
 [unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v9.1.0...HEAD
 [9.1.0]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v9.1.0
+
+
+[Unreleased]: https://github.com/willmendesneto/ngx-scroll-lock/compare/v9.1.1...HEAD
+[9.1.1]: https://github.com/willmendesneto/ngx-scroll-lock/tree/v9.1.1
